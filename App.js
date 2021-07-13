@@ -36,7 +36,9 @@ function App() {
   }
   const removeColorToDrop=(item)=>{
     setDrag((preVal=>preVal.filter((_, i)=>i!==item.index)))
-    setColor(preVal=>[...preVal, item])
+
+    // setColor(preVal=>[...preVal, item])
+
     console.log(item)
   }
   return (
